@@ -78,8 +78,8 @@
                                     <form action="{{ route('user.borrowings.cancel', $borrowing->id) }}" method="POST" class="d-inline">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('Apakah Anda yakin ingin membatalkan peminjaman ini?')">
-                                            <i class="bi bi-x-circle"></i> Batal
+                                        <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('Apakah Anda yakin ingin mengembalikan peminjaman ini?')">
+                                            <i class="bi bi-arrow-return-left"></i> Kembalikan
                                         </button>
                                     </form>
                                 @else
